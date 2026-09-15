@@ -75,18 +75,18 @@
   /* ---------- HERO ---------- */
   .hero{
     min-height:100svh; display:flex; align-items:center;
-    padding:0 7vw; position:relative; overflow:hidden;
+    padding:150px 7vw 110px; position:relative; overflow:hidden;
     background:
-      linear-gradient(rgba(26,26,26,0.035) 1px, transparent 1px) 0 0/100% 84px,
-      radial-gradient(120% 90% at 78% 40%, rgba(107,114,82,0.10), transparent 62%),
+      linear-gradient(rgba(26,26,26,0.03) 1px, transparent 1px) 0 0/100% 110px,
+      radial-gradient(120% 90% at 78% 40%, rgba(107,114,82,0.08), transparent 62%),
       var(--warm-white);
   }
   .hero-inner{position:relative; z-index:2; width:100%; max-width:1300px; margin:0 auto;}
   .hero-eyebrow{display:flex; align-items:center; gap:16px; margin-bottom:34px;}
   .hero-eyebrow::before{content:""; width:52px; height:1px; background:var(--olive);}
   .hero h1{
-    font-size:clamp(2.7rem,7.2vw,6rem);
-    font-weight:200; line-height:1.02; letter-spacing:-0.025em;
+    font-size:clamp(2.4rem,6vw,5rem);
+    font-weight:200; line-height:1.18; letter-spacing:-0.015em;
     max-width:15ch;
   }
   .hero h1 em{font-style:normal; font-weight:500; color:var(--olive);}
@@ -109,8 +109,8 @@
   }
   .btn-ghost:hover{background:transparent; border-color:var(--olive); color:var(--olive); transform:translateY(-2px);}
   .hero-meta{
-    position:absolute; bottom:46px; left:7vw; right:7vw; z-index:2;
-    display:flex; justify-content:space-between; align-items:flex-end;
+    margin-top:80px; z-index:2;
+    display:flex; justify-content:space-between; align-items:center;
     font-size:0.68rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--stone);
   }
   .scroll-cue{display:flex; align-items:center; gap:12px;}
@@ -290,11 +290,10 @@
       <a class="btn" href="#portfolio">View Portfolio</a>
       <a class="btn btn-ghost" href="#contact">Start a Project</a>
     </div>
-  </div>
-
-  <div class="hero-meta">
-    <span class="scroll-cue">Scroll</span>
-    <span>Architecture · Interiors · Construction</span>
+    <div class="hero-meta">
+      <span class="scroll-cue">Scroll</span>
+      <span>Architecture · Interiors · Construction</span>
+    </div>
   </div>
 </section>
 
